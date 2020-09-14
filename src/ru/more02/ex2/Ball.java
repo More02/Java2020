@@ -1,4 +1,4 @@
-package ex2;
+package ru.more02.ex2;
 
 public class Ball {
     private String type;

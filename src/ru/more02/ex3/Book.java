@@ -1,4 +1,4 @@
-package ex3;
+package ru.more02.ex3;
 
 public class Book {
     private String author;

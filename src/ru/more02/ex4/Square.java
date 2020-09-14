@@ -1,4 +1,4 @@
-package ex4;
+package ru.more02.ex4;
 
 public abstract class Square extends Rectangle {
     protected double side;

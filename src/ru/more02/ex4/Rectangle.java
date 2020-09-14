@@ -1,4 +1,4 @@
-package ex4;
+package ru.more02.ex4;
 
 public abstract class Rectangle extends Shape{
     protected double width;

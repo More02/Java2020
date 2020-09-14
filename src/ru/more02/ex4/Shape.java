@@ -1,4 +1,4 @@
-package ex4;
+package ru.more02.ex4;
 
 public abstract class Shape {
     protected String color;
@@ -37,6 +37,7 @@ public abstract class Shape {
     }
     public abstract double getArea();
     public abstract double getPerimeter();
+
 
 
 }
