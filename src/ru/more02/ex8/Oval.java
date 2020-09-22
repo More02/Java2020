@@ -7,10 +7,10 @@ public abstract class Oval extends Rectangle {
     {
         super.paint(g);
         g.setColor(Color.red);
-        g.fillRect(100, 200, 100, 200);
+        g.drawOval(100, 200, 400, 300);
     }
     public Oval() {
         super();
-        setVisible(false);
+        setVisible(true);
     }
 }

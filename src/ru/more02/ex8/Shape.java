@@ -12,6 +12,6 @@ public abstract class Shape extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
         setSize(800, 600);
-        setVisible(true);
+        setVisible(false);
     }
 }
