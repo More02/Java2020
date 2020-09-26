@@ -1,7 +1,7 @@
 package ru.more02.ex11;
 
-public class Main {
+public class Main_Task3 {
     public static void main(String[] args) {
-        new Game();
+        new Task3();
     }
 }
