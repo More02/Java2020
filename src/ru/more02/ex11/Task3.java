@@ -10,21 +10,30 @@ import static javax.swing.GroupLayout.DEFAULT_SIZE;
 public class Task3 extends JFrame{
     public Task3() {
         JFrame frame = new JFrame("example");
+        Label label1 = new Label("Выберите шрифт");
+        label1.setBounds(30, 10, 320, 20);
+        label1.setFont(new Font("Times New Roman", Font.ITALIC, 15));
+        frame.add(label1);
 
         JComboBox faceCombo = new JComboBox();
         faceCombo.setEditable(true);
         faceCombo.addItem("Times New Roman");
         faceCombo.addItem("MS Sans Serif");
         faceCombo.addItem("Courier New");
-        faceCombo.setBounds(30, 30, 320, 40);
+        faceCombo.setBounds(30, 40, 320, 40);
         frame.add(faceCombo);
+
+        Label label2 = new Label("Выберите цвет");
+        label2.setBounds(30, 90, 320, 20);
+        label2.setFont(new Font("Times New Roman", Font.ITALIC, 15));
+        frame.add(label2);
 
         JComboBox faceCombo2 = new JComboBox();
         faceCombo2.setEditable(true);
         faceCombo2.addItem("Blue");
         faceCombo2.addItem("Red");
         faceCombo2.addItem("Black");
-        faceCombo2.setBounds(30, 90, 320, 40);
+        faceCombo2.setBounds(30, 120, 320, 40);
         frame.add(faceCombo2);
 
 
@@ -34,7 +43,7 @@ public class Task3 extends JFrame{
         bigField.setBackground(Color.WHITE);
         bigField.setForeground(Color.BLUE);
         bigField.setFont(new Font("Times New Roman", Font.BOLD, 15));
-        bigField.setBounds(30, 150, 320, 40);
+        bigField.setBounds(30, 170, 320, 40);
         faceCombo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
