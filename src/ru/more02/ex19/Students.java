@@ -1,5 +1,8 @@
 package ru.more02.ex19;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Students {
@@ -25,8 +28,15 @@ public class Students {
             System.out.println("Не найдено");
         }
     }
-    public void SortFio() {
 
+    public void SortFio() {
+        SortingStudentByFIO sortingStudentByFIO = new SortingStudentByFIO();
+        ArrayList<Student> studentArrayList = new ArrayList<Student>();
+        studentArrayList.addAll(Arrays.asList(students));
+        Collections.sort(studentArrayList, sortingStudentByFIO);
+        for (Student s : studentArrayList) {
+            System.out.print(s.getFio()+" ");
+        }
     }
     public void sortIDNumber() {
         for (int i=0;i<5;i++) {
@@ -74,5 +84,6 @@ public class Students {
         String fio;
         fio=in.nextLine();
         studentss.SearchForFio("abc");
+        studentss.SortFio();
     }
 }
