@@ -9,8 +9,9 @@ import java.util.*;
 public class Solution {
     public static void main(String[] args) throws IOException {
         String fileName = null;
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in)))
-        {fileName = reader.readLine();}
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+            fileName = reader.readLine();
+        }
 
         String content = new String(Files.readAllBytes(Paths.get(fileName)), StandardCharsets.UTF_8);
         String[] words = content.split(" ");
